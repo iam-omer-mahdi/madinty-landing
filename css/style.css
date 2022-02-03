@@ -1,0 +1,135 @@
+body {
+  font-family: 'Tajawal', Arial, Helvetica, sans-serif;
+}
+
+section {
+  position: relative;
+  background-color: #fff;
+}
+
+section#calendar {
+    background-color: transparent;
+}
+
+/* Swiper Slider */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide .container {
+  position: relative;
+  z-index: 3;
+}
+
+.overlay-secondry {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero {
+  background-color: #333;
+}
+
+.calendar {
+  background: url('../images/website/shapes.png');
+}
+
+.contact {
+  background: url('../images/website/shapes.png');
+}
+
+.gallery img , video {
+  max-height: 300px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 0.5rem;
+  align-items: stretch;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px,300px));
+}
+
+[data-fancybox] {
+  cursor: zoom-in;
+}
+
+.fancybox__toolbar {
+  overflow: hidden;
+}
+
+.min-vh-100 {
+    min-height: 80vh !important;
+}
+
+.hero {
+    position: relative;
+    background-position: 50% 10% 0%;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 4;
+}
+
+svg {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  width: 100%;
+  left: 0;
+  bottom: -4rem;
+  z-index: 2;
+}
+
+table,
+td,
+th,
+tr {
+    white-space: nowrap;
+}
+
+i {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+}
